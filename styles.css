@@ -1,0 +1,146 @@
+:root {
+    --primary-color: #B34036;
+    --surface-color: rgba(0, 0, 20, 0.8);
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background: url('background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 15, 0.7);
+    z-index: 1;
+}
+
+main {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-container {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.site-logo {
+    max-width: 300px;
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(179, 64, 54, 0.3));
+}
+
+.typewriter-container {
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.static-text {
+    color: #fff;
+    font-weight: 300;
+}
+
+.dynamic-text {
+    font-family: 'Special Elite', cursive;
+    color: var(--primary-color);
+}
+
+.input-container {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 1.25rem;
+    background: var(--surface-color);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #fff;
+    border-radius: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    resize: none;
+    transition: all 0.3s ease;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(179, 64, 54, 0.2);
+}
+
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.generate-btn {
+    padding: 0.875rem 2rem;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+
+.generate-btn:hover {
+    background: #9c362e;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+}
+
+.generate-btn:active {
+    background: #832d26;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 768px) {
+    .site-logo {
+        max-width: 220px;
+    }
+    
+    .typewriter-container {
+        font-size: 2.5rem;
+    }
+    
+    .logo-container {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-logo {
+        max-width: 180px;
+    }
+    
+    .typewriter-container {
+        font-size: 2rem;
+    }
+} 
