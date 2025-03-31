@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horror Companion</title>
+    <title>Horror Companion - Results</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Special+Elite&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/google-ai/0.1/google-ai.js"></script>
-    <script src="https://www.gstatic.com/ai/generativelanguage/v1beta/lamda.js"></script>
+    <link rel="stylesheet" href="results.css">
 </head>
 <body>
     <div class="background-image"></div>
@@ -18,19 +17,19 @@
         <div class="logo-container">
             <img src="hc - logo.png" alt="Horror Companion" class="site-logo">
         </div>
-        <div class="typewriter-container">
-            <span class="static-text">Unleash</span>
-            <span class="dynamic-text"></span>
-        </div>
         
-        <div class="input-container">
-            <textarea placeholder="Enter keywords..."></textarea>
-            <button class="generate-btn">Generate</button>
+        <div class="results-container">
+            <div id="resultsContent"></div>
+        </div>
+
+        <div class="buttons-container">
+            <button class="back-btn">Back</button>
+            <button class="generate-btn">Generate Again</button>
         </div>
     </main>
     <script src="config.js"></script>
     <script src="prompts.js"></script>
     <script src="api.js"></script>
-    <script src="script.js"></script>
+    <script src="results.js"></script>
 </body>
-</html>
+</html> 
